@@ -11,12 +11,14 @@
     <sprite>sprites\spr_player_jump</sprite>
     <sprite>sprites\spr_player_walk</sprite>
     <sprite>sprites\spr_mask</sprite>
+    <sprite>sprites\sprite5</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
+    <object>objects\object2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
