@@ -1,6 +1,6 @@
 // Apply gravity
 
-if (vspd < 10) {
+if (vspd < 50) {
     vspd += grav;
 }
 

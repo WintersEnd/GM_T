@@ -27,17 +27,17 @@
             <kind>1</kind>
             <string>/// Init the Player
 
-grav = 2.2;
+grav = 2;
 hspd = 0;
 vspd = 0;
 
-jspd = 19.5;
-spd = 8;
+jspd = 25;
+spd = 10;
 
 state = states.normal;
 
 
-walkAnimSpd = 1;
+walkAnimSpd = 1.2;
 idleAnimSpd = 0.25;
 
 </string>
