@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>/// Init the Player
 
-grav = 1.8;
+grav = 1.9;
 hspd = 0;
 vspd = 0;
 
-jspd = 18;
+jspd = 19.5;
 spd = 8;
 
 image_speed = 0.25;
