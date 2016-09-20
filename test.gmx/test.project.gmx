@@ -14,6 +14,12 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_getinputs.gml</script>
+    <script>scripts\scr_player_normal.gml</script>
+    <script>scripts\scr_movecollisions.gml</script>
+    <script>scripts\scr_gravity.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
@@ -21,6 +27,13 @@
   <rooms name="rooms">
     <room>rooms\rm_test</room>
   </rooms>
+  <constants number="5">
+    <constant name="IDLE">1</constant>
+    <constant name="WALK">2</constant>
+    <constant name="JUMP">3</constant>
+    <constant name="RIGHT">0</constant>
+    <constant name="LEFT">1</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
