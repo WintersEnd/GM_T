@@ -10,6 +10,7 @@
     <sprite>sprites\spr_player_idle</sprite>
     <sprite>sprites\spr_player_jump</sprite>
     <sprite>sprites\spr_player_walk</sprite>
+    <sprite>sprites\spr7</sprite>
     <sprite>sprites\spr_player_attack</sprite>
     <sprite>sprites\spr_mask</sprite>
   </sprites>
