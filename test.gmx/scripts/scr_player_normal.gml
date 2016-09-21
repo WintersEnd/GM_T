@@ -28,6 +28,7 @@ if ((!rkey && !lkey) || (rkey && lkey)) {
 // Check for attack
 if (atkkey) {
     state = states.attack;
+    image_index = 0;
 }
 scr_movecollisions();
 scr_gravity();
