@@ -10,6 +10,7 @@
     <sprite>sprites\spr_player_idle</sprite>
     <sprite>sprites\spr_player_jump</sprite>
     <sprite>sprites\spr_player_walk</sprite>
+    <sprite>sprites\spr_player_attack</sprite>
     <sprite>sprites\spr_mask</sprite>
   </sprites>
   <backgrounds name="background"/>
@@ -17,12 +18,14 @@
   <scripts name="scripts">
     <script>scripts\scr_getinputs.gml</script>
     <script>scripts\scr_player_normal.gml</script>
+    <script>scripts\scr_player_attack.gml</script>
     <script>scripts\scr_movecollisions.gml</script>
     <script>scripts\scr_gravity.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
+    <object>objects\obj_view</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>

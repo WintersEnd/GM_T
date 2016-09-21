@@ -66,6 +66,7 @@ idleAnimSpd = 0.25;
 
 switch (state) {
     case states.normal: scr_player_normal(); break;
+    case states.attack: scr_player_attack(); break;
 }
 
 
@@ -94,6 +95,7 @@ switch (state) {
 if (state = states.normal) {
     if (!place_meeting(x,y+1, obj_solid)) {
         sprite_index = spr_player_jump;
+        image_speed = 0.7;
     } else {
         if (xprevious != x) {
             sprite_index = spr_player_walk;
@@ -111,6 +113,33 @@ if (state = states.normal) {
     }else if (xprevious &gt; x) {
         image_xscale = -1;
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///exit attack state
+
+if (sprite_index = spr_player_attack) {
+    state = states.normal;
 }
 </string>
           </argument>

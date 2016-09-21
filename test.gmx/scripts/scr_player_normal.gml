@@ -24,6 +24,11 @@ if ((!rkey && !lkey) || (rkey && lkey)) {
     hspd = 0;
 }
 
+
+// Check for attack
+if (atkkey) {
+    state = states.attack;
+}
 scr_movecollisions();
 scr_gravity();
 
