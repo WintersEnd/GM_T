@@ -1,4 +1,4 @@
-//Get input
+//scr_getinputs();
 
 rkey = keyboard_check(ord('D'));
 lkey = keyboard_check(ord('A'));

@@ -1,13 +1,21 @@
+///scr_player_normal();
 scr_getinputs();
 
 
-if (place_meeting(x, y+1, obj_solid)) {
-    vspd = 0
-    //Jumping
+//Check for not moving
+if ((!rkey && !lkey) || (rkey && lkey)) {
+    hspd = 0;
+}
+
+
+//Jumping
+if (place_meeting(x,y+1,obj_solid)) {
+    vspd = 0;
     if (jkey) {
         vspd = -jspd;
     }
 }
+
 
 //Moving
 

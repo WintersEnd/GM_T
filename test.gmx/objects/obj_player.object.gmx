@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_lifeform_parent</parentName>
   <maskName>spr_mask</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>/// Init the Player
+
+event_inherited();
 
 grav = 2;
 hspd = 0;
@@ -95,7 +97,7 @@ switch (state) {
             <string>///Control sprites
 
 if (state = states.normal) {
-    if (!place_meeting(x,y+1, obj_solid)) {
+    if (!place_meeting(phy_position_x,phy_position_y+1,obj_solid))  {
         sprite_index = spr_player_jump;
         image_speed = 0.7;
     } else {
@@ -110,9 +112,9 @@ if (state = states.normal) {
     
     //Control direction
     
-    if (phy_position_xprevious &lt; phy_position_x) {
+    if (phy_speed_x &gt; 0) {
         image_xscale = 1;
-    }else if (phy_position_xprevious &gt; phy_position_x) {
+    }else if (phy_speed_x &lt; 0) {
         image_xscale = -1;
     }
 }
