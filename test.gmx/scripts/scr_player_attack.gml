@@ -1,7 +1,5 @@
 // scr_player_attack
 
-scr_getinputs();
-
 hspd = 0;
 
 sprite_index = spr_player_attack;

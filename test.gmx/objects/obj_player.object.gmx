@@ -139,7 +139,6 @@ if (state = states.normal) {
             <string>///exit attack state
 
 if (sprite_index = spr_player_attack) {
-    image_index = 0
     state = states.normal;
 }
 </string>
