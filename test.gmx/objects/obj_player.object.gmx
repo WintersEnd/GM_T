@@ -40,6 +40,8 @@ state = states.normal;
 walkAnimSpd = 1.2;
 idleAnimSpd = 0.25;
 
+phy_fixed_rotation = true;
+
 </string>
           </argument>
         </arguments>
@@ -97,7 +99,7 @@ if (state = states.normal) {
         sprite_index = spr_player_jump;
         image_speed = 0.7;
     } else {
-        if (xprevious != x) {
+        if (phy_speed_x != 0) {
             sprite_index = spr_player_walk;
             image_speed = walkAnimSpd;
         } else {
@@ -108,12 +110,14 @@ if (state = states.normal) {
     
     //Control direction
     
-    if (xprevious &lt; x) {
+    if (phy_position_xprevious &lt; phy_position_x) {
         image_xscale = 1;
-    }else if (xprevious &gt; x) {
+    }else if (phy_position_xprevious &gt; phy_position_x) {
         image_xscale = -1;
     }
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -148,7 +152,7 @@ if (sprite_index = spr_player_attack) {
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -159,5 +163,10 @@ if (sprite_index = spr_player_attack) {
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>4,0.625</point>
+    <point>83.375,0.625</point>
+    <point>83.375,64</point>
+    <point>4,64</point>
+  </PhysicsShapePoints>
 </object>
