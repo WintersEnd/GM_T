@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1920</width>
   <height>1280</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -34,7 +34,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background0" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="1" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -55,11 +55,17 @@
   </views>
   <instances>
     <instance objName="obj_player" x="896" y="448" name="inst_A86CD010" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="960" y="624" name="inst_BCB6C0C8" locked="0" code="" scaleX="47.5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="176" y="96" name="inst_BA6A3D84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="1680" y="592" name="inst_A88995C0" locked="0" code="" scaleX="2.5" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_solid" x="240" y="592" name="inst_7DA4A287" locked="0" code="" scaleX="2.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy" x="624" y="432" name="inst_4F767190" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ground" x="976" y="592" name="inst_9C0A062D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="232" y="512" name="inst_697A0EFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1688" y="512" name="inst_BE9FDE36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="421" y="390" name="inst_D715C6B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="485" y="391" name="inst_F3E3DBD8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="867" y="312" name="inst_FDAB4587" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="931" y="312" name="inst_CF9A5154" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1210" y="395" name="inst_7F3C78EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="1274" y="395" name="inst_B5240765" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
