@@ -13,7 +13,9 @@
   <code>enum states {
     normal,
     attack
-}</code>
+}
+
+physics_world_gravity(0, 50);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -8,5 +8,6 @@ image_speed = 1.2;
 
 if(place_meeting(x,y+1,obj_solid)) hspd = 0;
 
-scr_gravity();
+
 scr_movecollisions();
+scr_gravity();

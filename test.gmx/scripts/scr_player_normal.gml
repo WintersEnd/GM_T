@@ -7,12 +7,11 @@ if ((!rkey && !lkey) || (rkey && lkey)) {
     hspd = 0;
 }
 
-
 //Jumping
 if (place_meeting(x,y+1,obj_solid)) {
-    vspd = 0;
+    //vspd = 0;
     if (jkey) {
-        vspd = -jspd;
+        phy_speed_y = -5;
     }
 }
 
@@ -34,6 +33,7 @@ if (atkkey) {
 }
 scr_movecollisions();
 scr_gravity();
+
 
 
 
