@@ -8,3 +8,4 @@ image_speed = 0.9;
 
 scr_gravity();
 scr_movecollisions();
+scr_move();

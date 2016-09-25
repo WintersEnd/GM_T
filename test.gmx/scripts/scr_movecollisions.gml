@@ -15,5 +15,3 @@ if (place_meeting(x, y+vspd, obj_solid)) {
 }
 
 
-y += vspd;
-x += hspd

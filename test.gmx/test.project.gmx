@@ -24,10 +24,16 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_getinputs.gml</script>
-    <script>scripts\scr_player_normal.gml</script>
-    <script>scripts\scr_player_attack.gml</script>
     <script>scripts\scr_movecollisions.gml</script>
+    <script>scripts\scr_enemy_player_collisions.gml</script>
     <script>scripts\scr_gravity.gml</script>
+    <script>scripts\scr_move.gml</script>
+    <scripts name="Player States">
+      <script>scripts\scr_player_attack.gml</script>
+      <script>scripts\scr_player_normal.gml</script>
+    </scripts>
+    <script>scripts\scr_enemy_normal.gml</script>
+    <script>scripts\scr_enemy_chase.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>

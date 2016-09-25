@@ -28,12 +28,15 @@
             <string>//Init
 
 dir = choose(-1, 1);
+movespeed = choose(5);
 
 grav = 2;
-hspd = 0;
+hspd = dir * movespeed;
 vspd = 0;
 
-movespeed = choose(1,2,3,4,5);
+state = enemystate.normal;
+
+image_speed = 0;
 
 
 </string>
@@ -58,49 +61,23 @@ movespeed = choose(1,2,3,4,5);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movement
+            <string>///Control the state
 
-hspd = dir * movespeed;
-
-// Horizontal collisions
-if (place_meeting(x+hspd, y, obj_solid)) {
-    while (!place_meeting(x+sign(hspd), y, obj_solid)) {
-        x += sign(hspd);
-    }
-    hspd = 0;
-    dir *= -1;
+switch (state) {
+    case enemystate.normal: 
+        scr_enemy_normal(); 
+    break;
+    
+    case enemystate.chase: scr_enemy_chase(); break;
 }
 
-// Vertical collisions
-if (place_meeting(x, y+vspd, obj_solid)) {
-    while (!place_meeting(x, y+sign(vspd), obj_solid)) {
-        y += sign(vspd);
-    }
-    vspd = 0;
-}
 
-// Collisions with player.
 
-knockback = hspd;
 
-if (place_meeting(x, y, obj_player)) {
-    if (dir = -1 and obj_player.x &lt; x-16) {
-        if(!place_meeting (obj_player.x + knockback, y, obj_solid)) {
-            obj_player.x += knockback;
-            hspd += obj_player.hspd * 0.1;
-        }
-    } else if (dir = 1 and obj_player.x &gt; x+16) {
-        if(!place_meeting (obj_player.x + knockback, y, obj_solid)) {
-            obj_player.x += knockback;
-            hspd += obj_player.hspd * 0.1;
-        }
-    }
-}
 
-y += vspd;
-x += hspd
 
-scr_gravity();
+
+
 </string>
           </argument>
         </arguments>

@@ -30,7 +30,10 @@ if (atkkey) {
     image_index = 0;
     state = states.attack;
 }
+
+
 scr_movecollisions();
+scr_move();
 scr_gravity();
 
 
