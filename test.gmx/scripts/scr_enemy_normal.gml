@@ -20,6 +20,6 @@ scr_move();
 //Apply gravity
 scr_gravity();
 
-if (distance_to_object(obj_player) < 96) {
-    state = enemystate.chase;
-}
+//if (distance_to_object(obj_player) < 96) {
+//    state = enemystate.chase;
+//}

@@ -107,15 +107,16 @@ if (state = states.normal) {
             image_speed = idleAnimSpd;
         }
     }
+}
     
     //Control direction
-    
-    if (xprevious &lt; x) {
+    scr_getinputs();
+    if (rkey) {
         image_xscale = 1;
-    }else if (xprevious &gt; x) {
+    }else if (lkey) {
         image_xscale = -1;
     }
-}
+
 </string>
           </argument>
         </arguments>

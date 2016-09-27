@@ -18,7 +18,9 @@
 enum enemystate {
     normal,
     chase
-}</code>
+}
+
+background_hspeed[0] = 0.3;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
